@@ -3,14 +3,16 @@ Bundle-ManifestVersion: 2
 Bundle-Name: org.eclipse.xtext.example.arithmetics.tests
 Bundle-Vendor: itemis AG
 Bundle-Version: 2.10.0.qualifier
-Bundle-SymbolicName: org.eclipse.xtext.example.arithmetics.tests; singleton:=true
+Bundle-SymbolicName: org.eclipse.xtext.example.arithmetics.tests;singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.xtext.example.arithmetics,
  org.junit;bundle-version="4.7.0",
  org.eclipse.xtext.junit4,
  org.eclipse.xtext.xbase.junit,
- org.eclipse.xtext.xbase.lib
-Export-Package: org.eclipse.xtext.example.arithmetics.tests
+ org.eclipse.xtext.xbase.lib,
+ org.eclipse.xtext.testing,
+ org.eclipse.xtext.xbase.testing
+Export-Package: org.eclipse.xtext.example.arithmetics.tests;x-internal=true
 Import-Package: org.hamcrest.core,
  org.junit;version="4.5.0",
  org.junit.runners.model;version="4.5.0",
